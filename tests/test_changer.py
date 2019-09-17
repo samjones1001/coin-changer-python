@@ -2,7 +2,7 @@ import pytest
 from context import changer
 
 
-@pytest.fixture(scope="function", autouse=True)
+@pytest.fixture()
 def coinChanger():
     return changer.CoinChanger()
 
@@ -21,3 +21,6 @@ def test_passing_two_returns_a_single_2p_coin(coinChanger):
 
 def test_passing_five_returns_a_single_5p_coin(coinChanger):
     assert coinChanger.calculate(5) == [5]
+
+def test_passing_10_returns_a_single_10p_coin(coinChanger):
+    assert coinChanger.calculate(10) == [10]
