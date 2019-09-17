@@ -3,10 +3,10 @@ class CoinChanger:
         self.denominations = denominations
 
     def calculate(self, change_amount):
-        list = []
+        change = []
         for coin in self.denominations:
             count = int(change_amount/coin)
             for _ in range(count):
-                list.append(coin)
+                change.append(coin)
                 change_amount -= coin
-        return list
+        return change
