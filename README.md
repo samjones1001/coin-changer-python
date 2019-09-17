@@ -17,7 +17,7 @@ Run the test suite using `pytest` from the command line.
 
 At present, this project can be run as a command line script using `python main.py [amount]` where amount represents the change you wish to calculate.
 
-Output will be printed to the command line as a list of integers representing coins.a
+Output will be printed to the command line as a list of integers representing coins.
 
 For example:
 
