@@ -1,6 +1,6 @@
 # Coin Changer Kata ![travis build staus](https://travis-ci.com/samjones1001/coin-changer-python.svg?branch=master)[![codecov](https://codecov.io/gh/samjones1001/coin-changer-python/branch/master/graph/badge.svg)](https://codecov.io/gh/samjones1001/coin-changer-python)
 
-A simple Python application for calculating the fewest number of coins with which a particular value of change can be made.
+A simple Python application for calculating the fewest number of coins with which a particular value of change can be reached.
 
 ### Setup
 
