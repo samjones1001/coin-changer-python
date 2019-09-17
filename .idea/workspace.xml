@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2a88bfdc-9334-4e2f-9c4f-8d1f07bcd007" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coinchanger/changer.py" beforeDir="false" afterPath="$PROJECT_DIR$/coinchanger/changer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_changer.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_changer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
