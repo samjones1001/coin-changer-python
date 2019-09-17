@@ -6,6 +6,7 @@ A simple Python application for calculating the fewest number of coins with whic
 
 This project uses [pipenv](https://github.com/pypa/pipenv) to manage dependencies.
 
+- Clone this repository
 - If not already present on your system, install pipenv using `pip install pipenv`
 - Intall dependencies using `pipenv install`
 
