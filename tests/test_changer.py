@@ -12,3 +12,7 @@ def test_passing_one_returns_a_single_penny():
 def test_passing_two_returns_a_single_2p_coin():
     coinchanger = changer.CoinChanger()
     assert coinchanger.calculate(2) == [2]
+
+def test_passing_five_returns_a_single_5p_coin():
+    coinchanger = changer.CoinChanger()
+    assert coinchanger.calculate(5) == [5]
