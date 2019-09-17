@@ -37,3 +37,19 @@ def test_passing_100_returns_a_single_1_pound_coin(coin_changer):
 
 def test_passing_200_returns_a_single_2_pound_coin(coin_changer):
     assert coin_changer.calculate(200) == [200]
+
+
+def test_returns_two_coins_where_necessary(coin_changer):
+    assert coin_changer.calculate(3) == [2, 1]
+    assert coin_changer.calculate(11) == [10, 1]
+
+
+def test_returns_three_coins_where_necessary(coin_changer):
+    assert coin_changer.calculate(16) == [10, 5, 1]
+    assert coin_changer.calculate(23) == [20, 2, 1]
+
+
+def test_returns_multiple_coins_for_complex_cases(coin_changer):
+    assert coin_changer.calculate(227) == [200, 20, 5, 2]
+    assert coin_changer.calculate(77) == [50, 20, 5, 2]
+    assert coin_changer.calculate(373) == [200, 100, 50, 20, 2, 1]
