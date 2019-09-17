@@ -1,1 +1,1 @@
-Coin Changer Kata
+# Coin Changer Kata ![travis build staus](https://travis-ci.com/samjones1001/coin-changer-python.svg?branch=master)[![codecov](https://codecov.io/gh/samjones1001/coin-changer-python/branch/master/graph/badge.svg)](https://codecov.io/gh/samjones1001/coin-changer-python)
