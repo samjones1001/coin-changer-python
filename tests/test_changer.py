@@ -42,3 +42,8 @@ def test_passing_200_returns_a_single_2_pound_coin(coin_changer):
 def test_returns_two_coins_where_necessary(coin_changer):
     assert coin_changer.calculate(3) == [2, 1]
     assert coin_changer.calculate(11) == [10, 1]
+
+
+def test_returns_three_coins_where_necessary(coin_changer):
+    assert coin_changer.calculate(16) == [10, 5, 1]
+    assert coin_changer.calculate(23) == [20, 2, 1]
