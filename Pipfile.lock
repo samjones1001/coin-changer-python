@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "35506486134781da2af56a20b1058f83b08a7cc590161f652e173533ee284358"
+            "sha256": "44b978c755ce4f4e358077f06328f69472553cc04f5d61ddb171a9fe92b922e3"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -15,7 +15,8 @@
             }
         ]
     },
-    "default": {
+    "default": {},
+    "develop": {
         "atomicwrites": {
             "hashes": [
                 "sha256:03472c30eb2c5d1ba9227e4c2ca66ab8287fbfbbda3888aa93dc2e28fc6811b4",
@@ -148,6 +149,5 @@
             ],
             "version": "==0.6.0"
         }
-    },
-    "develop": {}
+    }
 }
