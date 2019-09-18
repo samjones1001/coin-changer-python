@@ -3,7 +3,7 @@ class CoinChanger:
         self.denominations = denominations
 
     def calculate(self, change_amount, coins=None):
-        if coins == None: coins = []
+        if coins is None: coins = []
         for coin in self.denominations:
             if coin <= change_amount:
                 change_amount -= coin
