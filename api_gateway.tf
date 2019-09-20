@@ -21,7 +21,7 @@ resource "aws_api_gateway_integration" "changer" {
     resource_id = "${aws_api_gateway_resource.changer.id}"
     http_method = "${aws_api_gateway_method.changer.http_method}"
     type = "AWS_PROXY"
-    uri = "${aws_lambda_function.coin-changer.invoke_arn}"
+    uri = "${aws_lambda_function.coin_changer.invoke_arn}"
     integration_http_method = "POST"
 }
 
