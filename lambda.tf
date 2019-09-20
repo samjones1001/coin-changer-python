@@ -11,7 +11,7 @@ resource "aws_lambda_function" "coin_changer" {
   function_name = "CoinChanger"
 
   s3_bucket = "sjones-coin-changer-lambda"
-  s3_key = "coinchanger.zip"
+  s3_key = "lambda.zip"
 
   handler = "main.handler"
   runtime = "python3.6"
