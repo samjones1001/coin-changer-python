@@ -1,5 +1,6 @@
 import json
 
+
 def handler(event, context):
     change_amount = event['queryStringParameters']['change_amount']
     response = {
@@ -7,6 +8,7 @@ def handler(event, context):
         'body': json.dumps(calculate(change_amount))
     }
     return response
+
 
 def calculate(change_amount, coins=None):
     if coins is None: coins = []
