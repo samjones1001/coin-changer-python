@@ -1,12 +1,19 @@
-class CoinChanger:
-    def __init__(self, denominations=(200, 100, 50, 20, 10, 5, 2, 1)):
-        self.denominations = denominations
+import json
 
-    def calculate(self, change_amount, coins=None):
-        if coins is None: coins = []
-        for coin in self.denominations:
-            if coin <= change_amount:
-                change_amount -= coin
-                coins.append(coin)
-                return self.calculate(change_amount, coins)
-        return coins
+def handler(event, context):
+    change_amount = event['queryStringParameters']['change_amount']
+    response = {
+        'statusCode': 200,
+        'body': json.dumps(calculate(change_amount))
+    }
+    return response
+
+def calculate(change_amount, coins=None):
+    if coins is None: coins = []
+    for coin in (200, 100, 50, 20, 10, 5, 2, 1):
+        if coin <= change_amount:
+            change_amount -= coin
+            coins.append(coin)
+            return calculate(change_amount, coins)
+
+    return coins
