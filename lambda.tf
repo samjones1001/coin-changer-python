@@ -19,7 +19,7 @@ resource "aws_lambda_function" "coin_changer" {
 }
 
 resource "aws_iam_role" "lambda_exec" {
-  name = "sjones_coin_changer_lambda"
+  name = "sjones-coin-changer-lambda"
 
   assume_role_policy = <<EOF
 {
