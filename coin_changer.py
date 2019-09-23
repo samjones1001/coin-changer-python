@@ -17,11 +17,10 @@ def __invalid_args() -> bool:
 
 def lambda_main(event, context) -> dict:
     change_amount = int(event['queryStringParameters']['change_amount'])
-    response = {
+    return {
         'statusCode': 200,
         'body': json.dumps(changer.calculate(change_amount))
     }
-    return response
 
 
 if __name__ == '__main__': cli_main()
