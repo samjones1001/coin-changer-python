@@ -2,6 +2,10 @@ provider "aws" {
     region = "eu-central-1"
 }
 
+data "aws_s3_bucket" "bucket" {
+  bucket = "sjones-coin-changer-lambda"
+}
+
 resource "aws_lambda_function" "coin_changer" {
   function_name = "CoinChanger"
 
