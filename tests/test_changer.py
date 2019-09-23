@@ -1,5 +1,5 @@
 import pytest
-from context import changer
+from coinchanger import changer
 
 
 def test_passing_zero_returns_an_empty_array():
